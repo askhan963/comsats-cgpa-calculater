@@ -1,4 +1,3 @@
-import './App.css';
 
 function App() {
   return (
@@ -6,6 +5,6 @@ function App() {
      Hello React.js
     </div>
   );
-}
+} 
 
 export default App;

@@ -1,10 +1,10 @@
 import React from 'react'
-
+import NavBar from '../components/NavBar'
 const Home = () => {
   return (
-    <div className='text-8xl bg-black text-white '>
-    Home
-    </div>
+    <>
+    <NavBar/>
+    </>
     )
 }
 

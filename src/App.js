@@ -7,7 +7,7 @@ function App() {
   return (
    
    <>
-   <Routes>
+   <Routes> 
    <Route path="/" element={<Home/>} />
     <Route path="/gpa" element={<GpaCalculator/>} />
     <Route path="/cgpa" element={<CgpaCalc/>} />

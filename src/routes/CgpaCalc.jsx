@@ -2,7 +2,7 @@ import React from 'react'
 
 const CgpaCalc = () => {
   return (
-    <div className='text-8xl bg-black text-white '>
+    <div className='text-8xl'>
         CGpaCalculator
         </div>
   )

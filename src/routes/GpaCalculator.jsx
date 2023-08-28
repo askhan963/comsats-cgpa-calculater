@@ -1,10 +1,12 @@
 import React from 'react'
-
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 const GpaCalculator = () => {
   return (
-    <div className='text-8xl bg-black text-white '>
-        GpaCalculator
-        </div>
+    <>
+    <NavBar/>
+    <Footer/>
+    </>
   )
 }
 

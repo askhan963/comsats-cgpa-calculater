@@ -1,10 +1,12 @@
 import React from 'react'
-
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 const CgpaCalc = () => {
   return (
-    <div className='text-8xl'>
-        CGpaCalculator
-        </div>
+    <>
+    <NavBar/>
+    <Footer/>
+    </>
   )
 }
 

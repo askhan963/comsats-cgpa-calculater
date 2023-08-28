@@ -120,6 +120,7 @@ export function NavBar() {
           </Button>
         </MobileNav>
       </Navbar>
+      
     
   );
 }

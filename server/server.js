@@ -1,14 +1,16 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const dotenv = require("dotenv");
 
+dotenv.config()
 const app = express();
 app.use(cors());
 app.use(express.json());
-
-mongoose.connect('mongodb+srv://awaiskhanniazi963:Awais996633@mongodb.0u51jkx.mongodb.net/reviews?retryWrites=true&w=majority', {
+const Url = process.env.MONGO_URL;
+mongoose.connect(Url, {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true 
 })
   .then(() => {
     console.log('Connected to MongoDB');

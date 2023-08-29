@@ -6,9 +6,8 @@ const Hero = () => {
   const overlayStyle = {
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
   };
-
   return (
-    <div className="relative overflow-hidden bg-hero-image bg-cover bg-no-repeat p-12 text-center" style={{ height: '400px' }}>
+    <div className="relative overflow-hidden bg-hero-image bg-cover bg-no-repeat p-12 text-center" style={{ height: 'calc(100vh - 60px)' }}>
       <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed" style={overlayStyle}>
         <div className="flex h-full items-center justify-center">
           <div className="text-white">

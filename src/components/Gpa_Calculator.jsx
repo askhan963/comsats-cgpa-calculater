@@ -42,7 +42,7 @@ function GpaCalculator() {
           <h2 className="text-3xl font-semibold mb-4 text-white">GPA Calculator</h2>
           <div className="mb-4">
             <button
-              className="bg-blue-500 text-white px-4 py-2 rounded"
+              className="bg-green-500 text-white px-4 py-2 rounded hover:scale-105 duration-150"
               onClick={addSubject}
             >
               Add Subject
@@ -86,7 +86,7 @@ function GpaCalculator() {
             </div>
           ))}
           <button
-            className="bg-green-500 text-white px-4 py-2 rounded"
+            className=" bg-blue-700 text-white px-4 py-2 rounded hover:scale-105 duration-150"
             onClick={calculateGpa}
           >
             Calculate GPA

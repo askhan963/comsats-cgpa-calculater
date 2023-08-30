@@ -14,7 +14,7 @@ function ReviewForm({ fetchReviews }) {
     }
 
     try {
-        await axios.post('http://localhost:5000/reviews', { name, review });
+        await axios.post('https://reviews-api-rose.vercel.app/reviews', { name, review });
       fetchReviews(); // Fetch reviews to update the list
       setName('');
       setReview('');

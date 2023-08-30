@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 function ReviewForm({ fetchReviews }) {
   const [name, setName] = useState('');
   const [review, setReview] = useState('');
@@ -14,12 +15,39 @@ function ReviewForm({ fetchReviews }) {
     }
 
     try {
+      console.log("Submiting")
         await axios.post('https://reviews-api-rose.vercel.app/reviews', { name, review });
       fetchReviews(); // Fetch reviews to update the list
       setName('');
       setReview('');
+       // If the submission is successful
+     
+      toast.success('Form submitted successfully! Thank You For the Review!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+      console.log("Submited")
+
+
     } catch (error) {
       console.error('Error posting review:', error);
+        // If the submission is successful
+        toast.error('Sorry We have some Problem Please Try Again!', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
     }
   };
 

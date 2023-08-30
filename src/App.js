@@ -3,7 +3,10 @@ import CgpaCalc from "./routes/CgpaCalc";
 import Home from "./routes/Home";
 import Reviews from "./routes/Reviews";
 import { Routes,Route } from "react-router-dom";
+
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
+
   return (
    
    <>

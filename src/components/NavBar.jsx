@@ -63,7 +63,10 @@ export function NavBar() {
             to="/"
             className="mr-4 cursor-pointer py-1.5 font-bold text-xl text-white  hover:scale-110 duration-150"
           >
-            Comsats.code
+             <Link to={'/'} >
+             Comsats.code
+        </Link>
+          
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>

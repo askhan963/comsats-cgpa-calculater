@@ -53,8 +53,8 @@ function ReviewForm({ fetchReviews }) {
 
   return (
     <div className="w-10/12 mx-auto p-4">
-      <h1 className="text-4xl p-4 text-center font-semibold mb-4">Post a review</h1>
-    <form onSubmit={handleSubmit} className="w-1/2 mx-auto my-4 p-4 text-center bg-white shadow-md rounded">
+      <h1 className="text-2xl md:text-4xl p-4 text-center font-semibold mb-4">Post a review</h1>
+    <form onSubmit={handleSubmit} className="w-full md:w-1/2 mx-auto my-4 p-4 text-center bg-white shadow-md rounded">
       <input
         type="text"
         placeholder="Your Name"
@@ -70,7 +70,7 @@ function ReviewForm({ fetchReviews }) {
       />
       <button
         type="submit"
-        className="bg-green-500 w-1/2 text-center text-white px-4 py-2 rounded hover:bg-green-600"
+        className="bg-green-500 md:w-1/2 text-center text-white px-4 py-2 rounded hover:bg-green-600"
       >
         Post Review
       </button>

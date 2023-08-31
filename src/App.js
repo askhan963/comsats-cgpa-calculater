@@ -1,7 +1,7 @@
 import GpaCalculator from "./routes/GpaCalculator";
 import CgpaCalc from "./routes/CgpaCalc";
 import Home from "./routes/Home";
-import Reviews from "./routes/Reviews";
+import ReviewsPage from "./routes/ReviewsPage";
 import { Routes,Route } from "react-router-dom";
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,7 +14,7 @@ function App() {
    <Route path="/" element={<Home/>} />
     <Route path="/gpa" element={<GpaCalculator/>} />
     <Route path="/cgpa" element={<CgpaCalc/>} />
-    <Route path="/reviews" element={<Reviews/>} />
+    <Route path="/reviews" element={<ReviewsPage/>} />
    </Routes>
    </>
   );

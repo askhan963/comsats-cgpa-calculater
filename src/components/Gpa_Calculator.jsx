@@ -49,7 +49,7 @@ function GpaCalculator() {
             </button>
           </div>
           {subjects.map((subject, index) => (
-            <div key={index} className="mb-4">
+            <div key={index} className="mb-4 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
               <input
                 type="text"
                 placeholder="Subject"
@@ -64,7 +64,7 @@ function GpaCalculator() {
               <input
                 type="number"
                 placeholder="Credit Hours"
-                className="px-3 py-2 border rounded ml-4"
+                className="px-3 py-2 border rounded"
                 value={creditHours[index]}
                 onChange={(e) => {
                   const updatedCreditHours = [...creditHours];
@@ -75,7 +75,7 @@ function GpaCalculator() {
               <input
                 type="number"
                 placeholder="Grade"
-                className="px-3 py-2 border rounded ml-4"
+                className="px-3 py-2 border rounded"
                 value={grades[index]}
                 onChange={(e) => {
                   const updatedGrades = [...grades];

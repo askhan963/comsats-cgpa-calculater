@@ -1,8 +1,8 @@
 # Conmsats GPA and CGPA Calculator
 
 Welcome to the GPA and CGPA Calculator! This web application helps students calculate their Grade Point Average (GPA) and Cumulative Grade Point Average (CGPA) quickly and accurately. It's built using React with TailwindCSS for a user-friendly interface.
----
 
+---
 ## Features
 
 - **GPA Calculation**: Easily calculate your GPA for a single semester by entering your course grades and credit hours.
